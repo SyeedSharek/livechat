@@ -15,6 +15,7 @@ class SubcriptionController extends Controller
 
     public function subscription()
     {
+
         $user = User::first();
         // $user->notify(new TestNotfication);
         SentMail::dispatch($user);
